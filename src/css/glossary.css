@@ -1,0 +1,97 @@
+/* =========== Glossary Page ================= */
+
+.glossary-container {
+    margin: 0;
+    display: block;
+    padding: 0 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.glossary-container .glossary-quick-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 2rem 0;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.glossary-container .glossary-quick-links li {
+    margin: 0.25rem;
+}
+
+.glossary-container .glossary-quick-links a {
+    display: inline-block;
+    width: 2.25rem;
+    height: 2.25rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2rem;
+    color: #fff;
+    background: var(--fg-dred);
+    border-style: double;
+    border-radius: 25%;
+    border-width: 0.2rem;
+    margin-bottom: .25rem;
+    text-decoration: none;
+}
+
+
+.glossary-container .glossary-key-header {
+    border-bottom: .1rem solid rgb(170, 0, 0, 0.35);
+    margin-bottom: 3.5rem;
+}
+
+.glossary-container .glossary-key-header span {
+    display: inline-block;
+    background: #fff;
+    font-size: 2.25rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 1.7em;
+    border-style: double;
+    border-radius: 25%;
+    border-width: 0.3rem;
+    text-align: center;
+    color: var(--fg-dred);
+    position: relative;
+    top: 2.5rem;
+    z-index: 1;
+    opacity: 1;
+}
+
+.glossary-container .glossary-term-container {
+    display: block;
+    list-style: square;
+    text-align: left;
+    margin: 0 1rem;
+    padding: 0 1rem;
+}
+
+.terms_modal .modal .modal-dialog {
+    transform: translateY(50%);
+}
+
+@media (max-width: 576px) {
+    .terms_modal .modal .modal-dialog {
+        transform: translateY(50%);
+        margin: 1.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .terms_modal .modal .modal-dialog {
+        transform: translateY(25%);
+        margin: 1.2rem;
+    }
+}
+
+@media (min-width: 2400px) {
+    .terms_modal .modal .modal-dialog {
+        transform: translateY(200%);
+    }
+}
